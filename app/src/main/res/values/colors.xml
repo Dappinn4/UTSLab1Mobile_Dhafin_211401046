@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hello">#3A4750</color>
+    <color name="sophia">#191919</color>
+    <color name="search">#303841</color>
+    <color name="oren_card">#F6A010</color>
+    <color name="button_back">#FABC06</color>
+    <color name="jumping_card">#FBBC05</color>
+    <color name="holding_jumping_card">#29BFC9</color>
+    <color name="sitting_dumbbells_card">#FF805E</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView_popularExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/womanstretching"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="@id/imageView_popularExercise"
+        app:layout_constraintTop_toTopOf="@id/imageView_popularExercise">
+
+        <ImageView
+            android:id="@+id/rectangleheart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectagleheart" />
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/iconheart"
+            app:layout_constraintBottom_toBottomOf="@id/rectangleheart"
+            app:layout_constraintEnd_toEndOf="@id/rectangleheart"
+            app:layout_constraintStart_toStartOf="@id/rectangleheart"
+            app:layout_constraintTop_toTopOf="@id/rectangleheart" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textview_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Full Shot Woman Stretching Arm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView_popularExercise" />
+
+    <TextView
+        android:id="@+id/textviewbeginner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableRight="@drawable/linebeginner"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Beginner"
+        android:textColor="#303841"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_popular" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/clock"
+        app:layout_constraintBottom_toBottomOf="@id/textviewbeginner"
+        app:layout_constraintLeft_toRightOf="@id/textviewbeginner"
+        app:layout_constraintTop_toTopOf="@id/textviewbeginner" />
+
+    <TextView
+        android:id="@+id/textviewMin_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/montserrat"
+        android:text="30 min"
+        android:textColor="#303841"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/textviewbeginner"
+        app:layout_constraintStart_toEndOf="@id/clock"
+        app:layout_constraintTop_toTopOf="@id/textviewbeginner" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#26696969"
+        app:layout_constraintTop_toBottomOf="@id/textviewbeginner"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
